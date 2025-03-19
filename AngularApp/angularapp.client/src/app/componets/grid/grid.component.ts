@@ -12,7 +12,6 @@ import { DxDataGridModule, DxDataGridTypes } from 'devextreme-angular/ui/data-gr
   templateUrl: './grid.component.html',
   styleUrl: './grid.component.css',
   imports: [
-    BrowserModule,
     DxDataGridModule,
     DxTemplateModule,
     DxBulletModule,
@@ -34,9 +33,7 @@ export class GridComponent implements OnInit {
     }
   };
 
-  constructor(private httpService: HttpService) {
-
-  }
+  constructor(private httpService: HttpService) {}
 
   ngOnInit(): void {
     this.httpService.getRandomData().subscribe((res: any) => {

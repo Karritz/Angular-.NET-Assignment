@@ -17,6 +17,7 @@ export class LoginComponent {
   validUsername: boolean = true
   password: string = '';
   validPassword: boolean = true;
+  canLogin: boolean = false;
 
   validateUsername (value: any) {
     let regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
@@ -32,9 +33,8 @@ export class LoginComponent {
   validateLogin() {
     this.validateUsername(this.username);
     this.validatePassword(this.password);
-    if (this.validPassword && this.validUsername) {
-      this.validLogin.emit(true);
-    }
+    this.canLogin = (this.validPassword && this.validUsername);
+    this.validLogin.emit(this.canLogin);
   }
 
 }

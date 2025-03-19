@@ -1,45 +1,45 @@
-import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
+
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { LoginComponent } from './componets/login/login.component';
+import { GridComponent } from './componets/grid/grid.component';
+
+import { CommonModule } from '@angular/common';
 
 describe('AppComponent', () => {
   let component: AppComponent;
   let fixture: ComponentFixture<AppComponent>;
-  let httpMock: HttpTestingController;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [AppComponent],
-      imports: [HttpClientTestingModule]
-    }).compileComponents();
-  });
+      imports: [
+        LoginComponent,
+        GridComponent],
+  
+    })
+      .compileComponents();
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(AppComponent);
     component = fixture.componentInstance;
-    httpMock = TestBed.inject(HttpTestingController);
+    fixture.detectChanges();
   });
 
-  afterEach(() => {
-    httpMock.verify();
-  });
-
-  it('should create the app', () => {
+  it('should create', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should retrieve weather forecasts from the server', () => {
-    const mockForecasts = [
-      { date: '2021-10-01', temperatureC: 20, temperatureF: 68, summary: 'Mild' },
-      { date: '2021-10-02', temperatureC: 25, temperatureF: 77, summary: 'Warm' }
-    ];
+  it('should have a title', () => {
+    expect(component.title).toBeDefined();
+  });
 
-    component.ngOnInit();
+  it("should not login", () => {
+    component.login(false);
+    expect(component.isLoggedIn).toBeFalse();
+  });
 
-    const req = httpMock.expectOne('/weatherforecast');
-    expect(req.request.method).toEqual('GET');
-    req.flush(mockForecasts);
-
-    expect(component.forecasts).toEqual(mockForecasts);
+  it("should login", () => {
+    component.login(true);
+    expect(component.isLoggedIn).toBeTrue();
   });
 });

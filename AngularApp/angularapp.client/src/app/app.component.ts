@@ -14,16 +14,12 @@ interface Data {
   standalone: false,
   styleUrl: './app.component.css'
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
 
   title = 'AngularApp Client with .NET';
   isLoggedIn: boolean = false;
 
   constructor() { }
-
-  ngOnInit() {
-
-  }
 
   login($event: boolean) {
     this.isLoggedIn = $event;

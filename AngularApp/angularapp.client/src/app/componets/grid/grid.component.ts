@@ -34,8 +34,6 @@ export class GridComponent implements OnInit {
     }
   };
 
-  customizeTooltip = ({ originalValue }: Record<string, string>) => ({ text: `${parseInt(originalValue)}%` });
-
   constructor(private httpService: HttpService) {
 
   }

@@ -45,7 +45,6 @@ export class GridComponent implements OnInit {
       this.dataSource = res;
       this.loading = false;
     });
-    console.log(this.httpService.getDataSource())
   }
 
 }

@@ -1,0 +1,17 @@
+<div class="login-layout">
+    <label class="">
+        Username: <input [(ngModel)]="username"/>
+        <div *ngIf="!validUsername" style="color: red;">
+            Invaild Email Address
+        </div>
+    </label>
+    <label>
+        Password: <input [(ngModel)]="password" type="password"/>
+        <div *ngIf="!validPassword" style="color: red;">
+            Invaild Password its should be at least 6 chars, with at least one Uppercase, Lowercase, Number and special character. 
+        </div>
+    </label>
+    <button (click)="validateLogin()">
+        Login
+    </button>
+</div>

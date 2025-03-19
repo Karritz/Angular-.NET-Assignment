@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\garet\\OneDrive\\Documents\\GitHub\\Angular-.NET-Assignment\\AngularApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{509C9810-35B2-4D13-98A5-E78A7B285F74}|AngularApp.Server\\AngularApp.Server.csproj|c:\\users\\garet\\onedrive\\documents\\github\\angular-.net-assignment\\angularapp\\angularapp.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{509C9810-35B2-4D13-98A5-E78A7B285F74}|AngularApp.Server\\AngularApp.Server.csproj|solutionrelative:angularapp.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{509C9810-35B2-4D13-98A5-E78A7B285F74}|AngularApp.Server\\AngularApp.Server.csproj|c:\\users\\garet\\onedrive\\documents\\github\\angular-.net-assignment\\angularapp\\angularapp.server\\controllers\\randomdatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{509C9810-35B2-4D13-98A5-E78A7B285F74}|AngularApp.Server\\AngularApp.Server.csproj|solutionrelative:angularapp.server\\controllers\\randomdatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -18,11 +22,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\garet\\OneDrive\\Documents\\GitHub\\Angular-.NET-Assignment\\AngularApp\\AngularApp.Server\\Program.cs",
+              "RelativeDocumentMoniker": "AngularApp.Server\\Program.cs",
+              "ToolTip": "C:\\Users\\garet\\OneDrive\\Documents\\GitHub\\Angular-.NET-Assignment\\AngularApp\\AngularApp.Server\\Program.cs",
+              "RelativeToolTip": "AngularApp.Server\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T13:48:39.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "DataDto.cs",
               "DocumentMoniker": "C:\\Users\\garet\\OneDrive\\Documents\\GitHub\\Angular-.NET-Assignment\\AngularApp\\AngularApp.Server\\Controllers\\Dtos\\DataDto.cs",
               "RelativeDocumentMoniker": "AngularApp.Server\\Controllers\\Dtos\\DataDto.cs",
@@ -30,18 +47,17 @@
               "RelativeToolTip": "AngularApp.Server\\Controllers\\Dtos\\DataDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T12:18:54.988Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T12:18:54.988Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "RandomDataController.cs",
               "DocumentMoniker": "C:\\Users\\garet\\OneDrive\\Documents\\GitHub\\Angular-.NET-Assignment\\AngularApp\\AngularApp.Server\\Controllers\\RandomDataController.cs",
               "RelativeDocumentMoniker": "AngularApp.Server\\Controllers\\RandomDataController.cs",
               "ToolTip": "C:\\Users\\garet\\OneDrive\\Documents\\GitHub\\Angular-.NET-Assignment\\AngularApp\\AngularApp.Server\\Controllers\\RandomDataController.cs",
               "RelativeToolTip": "AngularApp.Server\\Controllers\\RandomDataController.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAAwFQAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAADgAAAAAAAAAAAAAwEsAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-19T12:12:49.145Z",
               "EditorCaption": ""

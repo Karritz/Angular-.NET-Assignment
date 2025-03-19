@@ -37,3 +37,4 @@ C:\Users\garet\OneDrive\Documents\GitHub\Angular-.NET-Assignment\AngularApp\Angu
 C:\Users\garet\OneDrive\Documents\GitHub\Angular-.NET-Assignment\AngularApp\AngularApp.Server\obj\Debug\net8.0\AngularApp.Server.pdb
 C:\Users\garet\OneDrive\Documents\GitHub\Angular-.NET-Assignment\AngularApp\AngularApp.Server\obj\Debug\net8.0\AngularApp.Server.genruntimeconfig.cache
 C:\Users\garet\OneDrive\Documents\GitHub\Angular-.NET-Assignment\AngularApp\AngularApp.Server\obj\Debug\net8.0\ref\AngularApp.Server.dll
+C:\Users\garet\OneDrive\Documents\GitHub\Angular-.NET-Assignment\AngularApp\AngularApp.Server\obj\Debug\net8.0\AngularApp.Server.sourcelink.json

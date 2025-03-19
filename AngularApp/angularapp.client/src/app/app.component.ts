@@ -1,11 +1,11 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
-interface WeatherForecast {
-  date: string;
-  temperatureC: number;
-  temperatureF: number;
-  summary: string;
+interface Data {
+  name: string,
+  region: string,
+  currency: string,
+  country: string,
+  numberrange: number,
 }
 
 @Component({
@@ -15,24 +15,19 @@ interface WeatherForecast {
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
-  public forecasts: WeatherForecast[] = [];
 
-  constructor(private http: HttpClient) {}
+  title = 'AngularApp Client with .NET';
+  isLoggedIn: boolean = false;
+
+  constructor() { }
 
   ngOnInit() {
-    this.getForecasts();
+
   }
 
-  getForecasts() {
-    this.http.get<WeatherForecast[]>('/weatherforecast').subscribe(
-      (result) => {
-        this.forecasts = result;
-      },
-      (error) => {
-        console.error(error);
-      }
-    );
+  login($event: boolean) {
+    this.isLoggedIn = $event;
   }
 
-  title = 'angularapp.client';
+
 }

@@ -89,7 +89,7 @@ namespace AngularApp.Server.Controllers
             _logger = logger;
         }
 
-        [HttpGet(Name = "GetWeatherForecast")]
+        [HttpGet(Name = "RandomData")]
         public IEnumerable<DataDto> Get()
         {
             return _dataDto;
